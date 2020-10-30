@@ -118,59 +118,11 @@ int Car_service()
             slno++;
     }
 
-    /*strcpy((repser+0)->repair_name,"Battery replacement------------------------- ");
-    strcpy((repser+1)->repair_name,"Brake replacement--------------------------- ");//
-    strcpy((repser+2)->repair_name,"Ignition coil and spark plug---------------- ");
-    strcpy((repser+3)->repair_name,"Oil filter---------------------------------- ");//
-    strcpy((repser+4)->repair_name,"Wiper blade replacement--------------------- ");
-    strcpy((repser+5)->repair_name,"New tires ---------------------------------- ");//
-    strcpy((repser+6)->repair_name,"Wheel alignment----------------------------- ");//
-    strcpy((repser+7)->repair_name,"Wheel balancing----------------------------- ");//
-    strcpy((repser+8)->repair_name,"Engine lubrication system replacement------- ");
-    strcpy((repser+9)->repair_name,"Scheduled maintenance----------------------- ");
-
-    (repser+0)->repair_time=3;
-    (repser+1)->repair_time=6;
-    (repser+2)->repair_time=12;
-    (repser+3)->repair_time=12;
-    (repser+4)->repair_time=3;
-    (repser+5)->repair_time=12;
-    (repser+6)->repair_time=6;
-    (repser+7)->repair_time=3;
-    (repser+8)->repair_time=12;
-    (repser+9)->repair_time=24;
-
-
-    (repser+0)->repair_cost[0]=3000;  (repser+0)->repair_cost[1]=2500;  (repser+0)->repair_cost[2]=2000;
-    (repser+1)->repair_cost[0]=10000; (repser+1)->repair_cost[1]=9050;  (repser+1)->repair_cost[2]=8000;
-    (repser+2)->repair_cost[0]=2200;  (repser+2)->repair_cost[1]=2000;  (repser+2)->repair_cost[2]=1800;
-    (repser+3)->repair_cost[0]=836;   (repser+3)->repair_cost[1]=760;   (repser+3)->repair_cost[2]=500;
-    (repser+4)->repair_cost[0]=1050;  (repser+4)->repair_cost[1]=950;   (repser+4)->repair_cost[2]=780;
-    (repser+5)->repair_cost[0]=26000; (repser+5)->repair_cost[1]=21000; (repser+5)->repair_cost[2]=14000;
-    (repser+6)->repair_cost[0]=200;   (repser+6)->repair_cost[1]=0;     (repser+6)->repair_cost[2]=0;
-    (repser+7)->repair_cost[0]=250;   (repser+7)->repair_cost[1]=0;     (repser+7)->repair_cost[2]=0;
-    (repser+8)->repair_cost[0]=25000; (repser+8)->repair_cost[1]=19000; (repser+8)->repair_cost[2]=15000;
-    (repser+9)->repair_cost[0]=2000;  (repser+9)->repair_cost[1]=0;     (repser+9)->repair_cost[2]=0;*/
-
     for(i=0;i<repno;i++)
     {
         required[i]=-1;
     }
     slno+=2;
-
-
-    /*FILE *wfile = fopen("repairlist.txt","w+");
-    if(wfile==NULL)
-    {
-        printf("not abel to open file");
-        return(1);
-    }
-    for(i=0;i<repno;i++)
-    {
-        fprintf(wfile,"%d\t%s\t%d\t%d\t%d\t%d\n",(repser+i)->repair_id,(repser+i)->repair_name,(repser+i)->repair_time,(repser+i)->repair_cost[0],(repser+i)->repair_cost[1],(repser+i)->repair_cost[2]);
-    }
-    fclose(wfile);*/
-
 
 
     do
@@ -1215,3 +1167,52 @@ int main()
         break;
     }
 }
+
+    /*strcpy((repser+0)->repair_name,"Battery replacement------------------------- ");
+    strcpy((repser+1)->repair_name,"Brake replacement--------------------------- ");//
+    strcpy((repser+2)->repair_name,"Ignition coil and spark plug---------------- ");
+    strcpy((repser+3)->repair_name,"Oil filter---------------------------------- ");//
+    strcpy((repser+4)->repair_name,"Wiper blade replacement--------------------- ");
+    strcpy((repser+5)->repair_name,"New tires ---------------------------------- ");//
+    strcpy((repser+6)->repair_name,"Wheel alignment----------------------------- ");//
+    strcpy((repser+7)->repair_name,"Wheel balancing----------------------------- ");//
+    strcpy((repser+8)->repair_name,"Engine lubrication system replacement------- ");
+    strcpy((repser+9)->repair_name,"Scheduled maintenance----------------------- ");
+
+    (repser+0)->repair_time=3;
+    (repser+1)->repair_time=6;
+    (repser+2)->repair_time=12;
+    (repser+3)->repair_time=12;
+    (repser+4)->repair_time=3;
+    (repser+5)->repair_time=12;
+    (repser+6)->repair_time=6;
+    (repser+7)->repair_time=3;
+    (repser+8)->repair_time=12;
+    (repser+9)->repair_time=24;
+
+
+    (repser+0)->repair_cost[0]=3000;  (repser+0)->repair_cost[1]=2500;  (repser+0)->repair_cost[2]=2000;
+    (repser+1)->repair_cost[0]=10000; (repser+1)->repair_cost[1]=9050;  (repser+1)->repair_cost[2]=8000;
+    (repser+2)->repair_cost[0]=2200;  (repser+2)->repair_cost[1]=2000;  (repser+2)->repair_cost[2]=1800;
+    (repser+3)->repair_cost[0]=836;   (repser+3)->repair_cost[1]=760;   (repser+3)->repair_cost[2]=500;
+    (repser+4)->repair_cost[0]=1050;  (repser+4)->repair_cost[1]=950;   (repser+4)->repair_cost[2]=780;
+    (repser+5)->repair_cost[0]=26000; (repser+5)->repair_cost[1]=21000; (repser+5)->repair_cost[2]=14000;
+    (repser+6)->repair_cost[0]=200;   (repser+6)->repair_cost[1]=0;     (repser+6)->repair_cost[2]=0;
+    (repser+7)->repair_cost[0]=250;   (repser+7)->repair_cost[1]=0;     (repser+7)->repair_cost[2]=0;
+    (repser+8)->repair_cost[0]=25000; (repser+8)->repair_cost[1]=19000; (repser+8)->repair_cost[2]=15000;
+    (repser+9)->repair_cost[0]=2000;  (repser+9)->repair_cost[1]=0;     (repser+9)->repair_cost[2]=0;*/
+
+    
+
+
+    /*FILE *wfile = fopen("repairlist.txt","w+");
+    if(wfile==NULL)
+    {
+        printf("not abel to open file");
+        return(1);
+    }
+    for(i=0;i<repno;i++)
+    {
+        fprintf(wfile,"%d\t%s\t%d\t%d\t%d\t%d\n",(repser+i)->repair_id,(repser+i)->repair_name,(repser+i)->repair_time,(repser+i)->repair_cost[0],(repser+i)->repair_cost[1],(repser+i)->repair_cost[2]);
+    }
+    fclose(wfile);*/
