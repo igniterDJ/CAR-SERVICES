@@ -2,778 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdbool.h>
-
-void New_car()
-{
-    printf("Buy a new car\n");
-    int t, r, m, c;
-    printf("1. SUV\n2. Hatchback\n3. Sedan\nSelect type of car you want: ");
-    scanf("%d", &t);
-    switch(t){
-        case 1:
-            printf("1. <=20L\n2. 20-40L\n3. 40-60L\n4. >=60L\nSelect your desired price range: ");
-            scanf("%d", &r);
-            switch(r){
-                case 1:
-                    printf("1. Honda\n2. Hyundai\n3. Jeep\n4. Kia\n5. Mahindra\n6. MG\n7. Tata\nSelect your desired manufacturer: ");
-                    scanf("%d", &m);
-                    switch(t){
-                        case 1:
-                            printf("1. BRV\n2. WRV\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 10L");
-                            }
-                            else if(r==2){
-                                printf("Cost: 11L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        case 2:
-                            printf("1. Creta\n2. Venue\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 11L");
-                            }
-                            else if(r==2){
-                                printf("Cost: 8L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        case 3:
-                            printf("1. Compass\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 17L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        case 4:
-                            printf("1. Seltos\n2. Sonet\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 14L");
-                            }
-                            else if(r==2){
-                                printf("Cost: 10L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        case 5:
-                            printf("1. Scorpio\n2. XUV300\n3. XUV500\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 10L");
-                            }
-                            else if(r==2){
-                                printf("Cost: 11L");
-                            }
-                            else if(r==3){
-                                printf("Cost: 19L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        case 6:
-                            printf("1. Hector\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 15L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        case 7:
-                            printf("1. Harrier\n2. Hexa\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 15L");
-                            }
-                            else if(r==2){
-                                printf("Cost: 15L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        default:
-                            printf("You nave Enter the wrong number");
-                            break;
-                    }
-                    break;
-                case 2:
-                    printf("1. BMW\n2. Ford\n3. Honda\n4. Mitsubishi\n5. Toyota\nSelect your desired manufacturer: ");
-                    scanf("%d", &m);
-                    switch(t){
-                        case 1:
-                            printf("1. X1\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 38L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        case 2:
-                            printf("1. Endeavour\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 31L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        case 3:
-                            printf("1. CRV\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 27L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        case 4:
-                            printf("1. Pajero\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 28L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        case 5:
-                            printf("1. Fortuner\n2. Innova\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 39L");
-                            }
-                            else if(r==2){
-                                printf("Cost: 21L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        default:
-                            printf("You nave Enter the wrong number");
-                            break;
-                    }
-                    break;
-                case 3:
-                    printf("1. BMW\n2. Land Rover\nSelect your desired manufacturer: ");
-                    scanf("%d", &m);
-                    switch(t){
-                        case 1:
-                            printf("1. X2\n2. X3\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 45L");
-                            }
-                            else if(r==2){
-                                printf("Cost: 51L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        case 2:
-                            printf("1. Range Rover Evoque\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 59L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        default:
-                            printf("You nave Enter the wrong number");
-                            break;
-                    }
-                    break;
-                case 4:
-                    printf("1. BMW\n2. Jaguar\n3. Jeep\n4. Land Rover\n5. Mercedes\n6. Porsche\n7. Toyota\nSelect your desired manufacturer: ");
-                    scanf("%d", &m);
-                    switch(t){
-                        case 1:
-                            printf("1. X4\n2. X5\n3. X6\n4. X7\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 65L");
-                            }
-                            else if(r==2){
-                                printf("Cost: 79L");
-                            }
-                            else if(r==3){
-                                printf("Cost: 95L");
-                            }
-                            else if(r==4){
-                                printf("Cost: 102L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        case 2:
-                            printf("1. F-Pace\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 65L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        case 3:
-                            printf("1. Wrangler\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 84L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        case 4:
-                            printf("1. Discovery\n2. Range Rover Sport\n3. Range Rover Velar\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 82L");
-                            }
-                            else if(r==2){
-                                printf("Cost: 135L");
-                            }
-                            else if(r==3){
-                                printf("Cost: 74L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        case 5:
-                            printf("1. 4 Matic\n2. G-Wagon\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 86L");
-                            }
-                            else if(r==2){
-                                printf("Cost: 191L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        case 6:
-                            printf("1. Cayenne\n2. Macan\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 156L");
-                            }
-                            else if(r==2){
-                                printf("Cost: 76L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        case 7:
-                            printf("1. Land Crusier\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 120L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        default:
-                            printf("You nave Enter the wrong number");
-                            break;
-                    }
-                    break;
-            }
-            break;
-        case 2:
-            printf("1. <=10L\n2. 10-20L\n3. 20-30L\n4. >=30L\nSelect your desired price range: ");
-            scanf("%d", &r);
-            switch(r){
-                case 1:
-                    printf("1.Ford \n2.Honda \n3. Hyundai\n4. Suzuki\n5. Tata\n6. Volkswagen\nSelect your desired manufacturer: ");
-                    scanf("%d", &m);
-                    switch(t){
-                        case 1:
-                            printf("1. Figo\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 8L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        case 2:
-                            printf("1. Brio\n2. Jazz\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 6L");
-                            }
-                            else if(r==2){
-                                printf("Cost: 9L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        case 3:
-                            printf("1. i10\n2. i20\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 7L");
-                            }
-                            else if(r==2){
-                                printf("Cost: 9L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        case 4:
-                            printf("1. Boleno\n2. Swift\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 6L");
-                            }
-                            else if(r==2){
-                                printf("Cost: 8L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        case 5:
-                            printf("1. Indica\n2. Nano\n3. Tiago\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 5L");
-                            }
-                            else if(r==2){
-                                printf("Cost: 3L");
-                            }
-                            else if(r==3){
-                                printf("Cost: 6L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        case 6:
-                            printf("1. Polo\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 9L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        default:
-                            printf("You nave Enter the wrong number");
-                            break;
-                    }
-                    break;
-                case 2:
-                    printf("1. Suzuki\n2. Toyota\nSelect your desired manufacturer: ");
-                    scanf("%d", &m);
-                    switch(t){
-                        case 1:
-                            printf("1. Vitara Brezza\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 12L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        case 2:
-                            printf("1. Glanza\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 11L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-
-                        default:
-                            printf("You nave Enter the wrong number");
-                            break;
-                    }
-                    break;
-                case 3:
-                    printf("1. Mercedes\nSelect your desired manufacturer: ");
-                    scanf("%d", &m);
-                    switch(t){
-                        case 1:
-                            printf("1. A-Class\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 29L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        default:
-                            printf("You nave Enter the wrong number");
-                            break;
-                    }
-                    break;
-                case 4:
-                    printf("1. Mercedes\n2. Prosche\n3. Tesla\nSelect your desired manufacturer: ");
-                    scanf("%d", &m);
-                    switch(t){
-                        case 1:
-                            printf("1. B-Class\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 31L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        case 2:
-                            printf("1. Panemera\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 258L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        case 3:
-                            printf("1. Model 3\n2. Model X\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 75L");
-                            }
-                            else if(r==2){
-                                printf("Cost: 202L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        default:
-                            printf("You nave Enter the wrong number");
-                            break;
-                    }
-                    break;
-            }
-            break;
-        case 3:
-            printf("1. <=20L\n2. 20-40L\n3. 40-60L\n4. >=60L\nSelect your desired price range: ");
-            scanf("%d", &r);
-            switch(r){
-                case 1:
-                    printf("1. Ford\n2. Honda\n3. Hyundai\n4. Suzuki\n5. Tata\n6. Toyota\n7. Volkswagen\nSelect your desired manufacturer: ");
-                    scanf("%d", &m);
-                    switch(t){
-                        case 1:
-                            printf("1. Icon\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 6L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        case 2:
-                            printf("1. Amaze\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 8L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        case 3:
-                            printf("1. Verna\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 11L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        case 4:
-                            printf("1. Swift Dzire \n2. SX4\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 9L");
-                            }
-                            else if(r==2){
-                                printf("Cost: 8L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        case 5:
-                            printf("1. Manza\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 6L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        case 6:
-                            printf("1. Etios\n2. Corolla Altis\n3. Yaris\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 8L");
-                            }
-                            else if(r==2){
-                                printf("Cost: 18L");
-                            }
-                            else if(r==3){
-                                printf("Cost: 11L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        case 7:
-                            printf("1. Vento\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 11L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        default:
-                            printf("You nave Enter the wrong number");
-                            break;
-                    }
-                    break;
-                case 2:
-                    printf("1. Skoda\nSelect your desired manufacturer: ");
-                    scanf("%d", &m);
-                    switch(t){
-                        case 1:
-                            printf("1. Laura\n2. Octavia\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 21L");
-                            }
-                            else if(r==2){
-                                printf("Cost: 38L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        default:
-                            printf("You nave Enter the wrong number");
-                            break;
-                    }
-                    break;
-                case 3:
-                    printf("1. Audi\n2. BMW\n3. Mercedes\n4. Toyota\n5. Volvo\nSelect your desired manufacturer: ");
-                    scanf("%d", &m);
-                    switch(t){
-                        case 1:
-                            printf("1. A4\n2. A6\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 44L");
-                            }
-                            else if(r==2){
-                                printf("Cost: 58L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        case 2:
-                            printf("1. 3 Series\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 45L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        case 3:
-                            printf("1. C-Class\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 44L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        case 4:
-                            printf("1. Camry\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 56L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        case 5:
-                            printf("1. S40\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 52L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        default:
-                            printf("You nave Enter the wrong number");
-                            break;
-                    }
-                    break;
-                case 4:
-                    printf("1. Audi\n2. Bentley\n3. BMW\n4. Jaguar\n5. Mercedes\n6. Rolls-Royce\n7. Volvo\nSelect your desired manufacturer: ");
-                    scanf("%d", &m);
-                    switch(t){
-                        case 1:
-                            printf("1. A6\n2. A8\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 63L");
-                            }
-                            else if(r==2){
-                                printf("Cost: 130L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        case 2:
-                            printf("1. Continental\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 390L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        case 3:
-                            printf("1. 5 Series\n2. 7 Series\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 61L");
-                            }
-                            else if(r==2){
-                                printf("Cost: 110L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        case 4:
-                            printf("1. XJ\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 99L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        case 5:
-                            printf("1. E-Class\n2. Maybach\n3. S-Class\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 65L");
-                            }
-                            else if(r==2){
-                                printf("Cost: 281L");
-                            }
-                            else if(r==3){
-                                printf("Cost: 196L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        case 6:
-                            printf("1. Ghost\n2. Phantom\n3. Wraith\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 596L");
-                            }
-                            else if(r==2){
-                                printf("Cost: 1002L");
-                            }
-                            else if(r==3){
-                                printf("Cost: 674L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        case 7:
-                            printf("1. S90\nSelect your car: ");
-                            scanf("%d", &r);
-                            if(r==1){
-                                printf("Cost: 61L");
-                            }
-                            else{
-                                printf("You nave Enter the wrong number");
-                            }
-                            break;
-                        default:
-                            printf("You nave Enter the wrong number");
-                            break;
-                    }
-                    break;
-                }
-            break;
-        default:
-            printf("You nave Enter the wrong number\n");
-            break;
-    }
-    return 0;
-}
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////////
-//-------------------------------------------------------------------------------------------------------//
-///////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+#define numcust 10
+#define repno 10
 int ind_cost[10],required[10],slno=0,recp=2354;
 float cartax=0.5;
 //Database of customer
@@ -786,15 +16,18 @@ struct customer{
     int cust_dday;
     int cust_dmonth;
     int cust_cost;
-}cust[10];int numcust=10;
+    int cust_required[10];
+    int cust_indcost[10];
+};
+struct customer cust[10];
 //Database of types of repairs available
 struct repair{
     int repair_id;
     char repair_name[100];
     int repair_time;
     int repair_cost[3];
-}arr[10];int repno =10;
-struct repair *repser=arr;
+};
+struct repair repser[10];
 void printreh(int n)
 {
     int i;
@@ -811,15 +44,18 @@ void printreh(int n)
     printf("\n");
 }
 //To print bill
-void print_bill(char name[30],char no[10],int ccost,int exescount,int extracost)
+void print_bill(char name[30],char no[10],int ccost,int exescount,int extracost,int bill)
 {
     float service_tax,rcost;
-    int i;
+    int i,lenght,j;
     service_tax=cartax*ccost/100;
     rcost=ccost+service_tax;
 
     printreh(0);
-    printf("                                           CAR BILL\n");
+    if(bill==1)
+        printf("                                     ESTIMATED CAR BILL\n");
+    else
+        printf("                                         CAR BILL\n");
     printreh(1);
     printf("   HSD car services\n");
     printf("   HSD street\n");
@@ -830,11 +66,16 @@ void print_bill(char name[30],char no[10],int ccost,int exescount,int extracost)
     printreh(0);
     printf("   SERVICE DESCRIPTION                                                                      RS AMOUNT\n");
     printreh(1);
-    for(i=0;i<10;i++)
+    for(i=0;i<numcust;i++)
     {
-        if((repser+required[i])->repair_cost[0]!=-1 && ind_cost[required[i]]!=0)
+        if(repser[required[i]].repair_cost[0]!=-1 && ind_cost[required[i]]!=0)
         {
-            printf("   %s                                              %d\n",(repser+required[i])->repair_name,ind_cost[required[i]]);
+            lenght=strlen(repser[required[i]].repair_name);
+            for(j=0;j<44-lenght;j++)
+            {
+                strcat(repser[required[i]].repair_name," ");
+            }
+            printf("   %s                                              %d\n",repser[required[i]].repair_name,ind_cost[required[i]]);
         }
     }
     if(exescount==1)
@@ -856,31 +97,37 @@ void recprint(int p)
 {
     if(p<9)
     {
-        printf("id - %d  | service - %s\n",(repser+p)->repair_id,(repser+p)->repair_name);
+        printf("id - %d  | service - %s\n",repser[p].repair_id,repser[p].repair_name);
         p++;
         recprint(p);
     }
     else
     {
-        printf("id - %d | service - %s\n",(repser+p)->repair_id,(repser+p)->repair_name);
+        printf("id - %d | service - %s\n",repser[p].repair_id,repser[p].repair_name);
     }
 
 }
 
 //For giving car to service
-void Car_service()
+int Car_service()
 {
+    int i,j,z,x=10,dist,total_time=0,total_cost=0,grade,receipt,jcount,date;
+    for(i=0;i<repno;i++)
+    {
+        if(cust[i].cust_cmonth!=0)
+            slno++;
+    }
 
-    strcpy((repser+0)->repair_name,"Battery replacement                         ");
-    strcpy((repser+1)->repair_name,"Brake replacement                           ");//
-    strcpy((repser+2)->repair_name,"Ignition coil and spark plug                ");
-    strcpy((repser+3)->repair_name,"Oil filter                                  ");//
-    strcpy((repser+4)->repair_name,"Wiper blade replacement                     ");
-    strcpy((repser+5)->repair_name,"New tires                                   ");//
-    strcpy((repser+6)->repair_name,"Wheel alignment                             ");//
-    strcpy((repser+7)->repair_name,"Wheel balancing                             ");//
-    strcpy((repser+8)->repair_name,"Engine lubrication system replacement       ");
-    strcpy((repser+9)->repair_name,"Scheduled maintenance                       ");
+    /*strcpy((repser+0)->repair_name,"Battery replacement------------------------- ");
+    strcpy((repser+1)->repair_name,"Brake replacement--------------------------- ");//
+    strcpy((repser+2)->repair_name,"Ignition coil and spark plug---------------- ");
+    strcpy((repser+3)->repair_name,"Oil filter---------------------------------- ");//
+    strcpy((repser+4)->repair_name,"Wiper blade replacement--------------------- ");
+    strcpy((repser+5)->repair_name,"New tires ---------------------------------- ");//
+    strcpy((repser+6)->repair_name,"Wheel alignment----------------------------- ");//
+    strcpy((repser+7)->repair_name,"Wheel balancing----------------------------- ");//
+    strcpy((repser+8)->repair_name,"Engine lubrication system replacement------- ");
+    strcpy((repser+9)->repair_name,"Scheduled maintenance----------------------- ");
 
     (repser+0)->repair_time=3;
     (repser+1)->repair_time=6;
@@ -903,9 +150,29 @@ void Car_service()
     (repser+6)->repair_cost[0]=200;   (repser+6)->repair_cost[1]=0;     (repser+6)->repair_cost[2]=0;
     (repser+7)->repair_cost[0]=250;   (repser+7)->repair_cost[1]=0;     (repser+7)->repair_cost[2]=0;
     (repser+8)->repair_cost[0]=25000; (repser+8)->repair_cost[1]=19000; (repser+8)->repair_cost[2]=15000;
-    (repser+9)->repair_cost[0]=2000;  (repser+9)->repair_cost[1]=0;     (repser+9)->repair_cost[2]=0;
+    (repser+9)->repair_cost[0]=2000;  (repser+9)->repair_cost[1]=0;     (repser+9)->repair_cost[2]=0;*/
 
-    int i,j,z,x=10,dist,total_time=0,total_cost=0,grade,receipt,jcount,date;
+    for(i=0;i<repno;i++)
+    {
+        required[i]=-1;
+    }
+    slno+=2;
+
+
+    /*FILE *wfile = fopen("repairlist.txt","w+");
+    if(wfile==NULL)
+    {
+        printf("not abel to open file");
+        return(1);
+    }
+    for(i=0;i<repno;i++)
+    {
+        fprintf(wfile,"%d\t%s\t%d\t%d\t%d\t%d\n",(repser+i)->repair_id,(repser+i)->repair_name,(repser+i)->repair_time,(repser+i)->repair_cost[0],(repser+i)->repair_cost[1],(repser+i)->repair_cost[2]);
+    }
+    fclose(wfile);*/
+
+
+
     do
     {
         printf("Enter date in the format of MMDD or MDD: ");
@@ -913,41 +180,30 @@ void Car_service()
         cust[slno].cust_cmonth=date/100;
         cust[slno].cust_cday=date-(100*cust[slno].cust_cmonth);
     }while(cust[slno].cust_cmonth>12 || cust[slno].cust_cmonth<=0 || cust[slno].cust_cday>31 || cust[slno].cust_cday<1);
-    float service_tax;
-    //char carno[10],name[25],repair[x][4][100];
     printf("Enter your name:");
     scanf(" %[^\n]%*c",cust[slno].cust_name);
     printf("Enter your car number:");
-    scanf(" %[^\n]%*c",cust[slno].cust_carno);
-
-
-    for(i=0;i<repno;i++)
-    {
-        (repser+i)->repair_id=i+1;
-        required[i]=-1;
-    }
+    scanf(" %s",cust[slno].cust_carno);
 
     printf("Total distance covered by the car (else '0')\n");
     scanf("%d",&z);
     if(z>=0)
     {
         dist=z;
-        printf("As your car has traveled an approximate distance of %d KM we recommend you to take this services\n",dist);
+        printf("As your car has traveled an approximate distance of %d KM ",dist);
 
         if(z>3000)
         {
-            printf("%s\n",(repser+6)->repair_name);
+            printf("we recommend you to take this services\n");
+            printf("%s\n",repser[6].repair_name);
             if(5000<=dist)
             {
-                printf("%s\n",(repser+3)->repair_name);
-                printf("%s\n",(repser+7)->repair_name);
+                printf("%s\n",repser[3].repair_name);
+                printf("%s\n",repser[7].repair_name);
                 if(10000<=dist)
                 {
-                    printf("%s\n",(repser+1)->repair_name);
-                    if(20000<=dist)
-                    {
-                        printf("%s\n",(repser+5)->repair_name);
-                    }
+                    printf("%s\n",repser[1].repair_name);
+                    (20000<=dist)?(printf("%s\n",repser[5].repair_name)):(printf("\n"));
                 }
             }
         }
@@ -999,25 +255,25 @@ void Car_service()
     {
         if(required[i]!=-1)
         {
-            if((repser+required[i])->repair_cost[1]!=0)
+            if(repser[required[i]].repair_cost[1]!=0)
             {
                 do
                 {
-                    printf("enter which grade quality do you want for %s\n",(repser+required[i])->repair_name);
-                    printf("There are three grades 1,2,3 select one , 1 is the best grade\n");
+                    printf("enter which grade quality do you want for %s\n",repser[required[i]].repair_name);
+                    printf("There are three grades 1,2,3 select one , 1 is the best grade,0 if you want to cancel\n");
                     scanf("%d",&grade);
                     if(grade==1 || grade==2 || grade ==3)
                     {
                         grade=grade-1;
-                        total_cost+=(repser+required[i])->repair_cost[grade];
-                        ind_cost[required[i]]=(repser+required[i])->repair_cost[grade];
+                        total_cost+=repser[required[i]].repair_cost[grade];
+                        ind_cost[required[i]]=repser[required[i]].repair_cost[grade];
                     }
                 }while(grade!=0 && grade!=1 && grade!=2);
             }
             else
             {
-                total_cost+=(repser+required[i])->repair_cost[0];
-                ind_cost[required[i]]=(repser+required[i])->repair_cost[0];
+                total_cost+=repser[required[i]].repair_cost[0];
+                ind_cost[required[i]]=repser[required[i]].repair_cost[0];
             }
         }
     }
@@ -1026,7 +282,7 @@ void Car_service()
     {
         if(required[i]!=-1)
         {
-            total_time+=(repser+required[i])->repair_time;
+            total_time+=repser[required[i]].repair_time;
         }
 
     }
@@ -1040,7 +296,6 @@ void Car_service()
         total_time=(total_time/24)+1;
     }
 
-    service_tax=0.5*total_cost/100;
     if(total_time==1)
     {
         printf("your repairs will be completed in %d day\n",total_time);
@@ -1057,7 +312,7 @@ void Car_service()
 
     if(receipt==1)
     {
-        print_bill(cust[slno].cust_name,cust[slno].cust_carno,total_cost,0,0);
+        print_bill(cust[slno].cust_name,cust[slno].cust_carno,total_cost,0,0,1);
 
     }
     if(receipt==0)
@@ -1066,12 +321,19 @@ void Car_service()
     }
 
     printf("If there are any extra repairs we will inform you when you come again\n\n\n");
+
+    for(i=0;i<numcust;i++)
+    {
+        cust[slno].cust_required[i]=required[i];
+        cust[slno].cust_indcost[i]=ind_cost[i];
+    }
+
+    return(0);
 }
 //for taking car after service
-void Car_return()
+int Car_return()
 {
-    int rcar_time,extra,extrarep,i,tcount=0;
-
+    int rcar_time,extra,extrarep,i,tcount=0,j;
     printf("Welcome back\nPlease enter your car no\n");
     char rcar_no[10];
     scanf("%s",rcar_no);
@@ -1083,7 +345,7 @@ void Car_return()
             printf("Hi Mr/Ms %s\n",cust[i].cust_name);
             do
             {
-                printf("Enter date in the format of MMDD or MDD: ");
+                printf("Enter date in the format MMDD or MDD:\n");
                 scanf("%d",&date);
                 cust[i].cust_dmonth=date/100;
                 cust[i].cust_dday=date-(100*cust[i].cust_dmonth);
@@ -1099,6 +361,11 @@ void Car_return()
             }
             if(rcar_time>=cust[i].cust_time)
             {
+                for(j=0;j<10;j++)
+                {
+                    required[j]=cust[i].cust_required[j];
+                    ind_cost[j]=cust[i].cust_indcost[j];
+                }
                 printf("Your work has been completed\n");
                 printf("Give 1 if any extra repairs has been done else enter 0\n");
                 scanf("%d",&extra);
@@ -1107,12 +374,12 @@ void Car_return()
                     printf("What is the total cost if extra repairs\n");
                     scanf("%d",&extrarep);
                     cust[i].cust_cost+=extrarep;
-                    print_bill(cust[i].cust_name,cust[i].cust_carno,cust[i].cust_cost,extra,extrarep);
+                    print_bill(cust[i].cust_name,cust[i].cust_carno,cust[i].cust_cost,extra,extrarep,0);
                 }
                 if(extra == 0)
                 {
                     printf("This is the bill\n");
-                    print_bill(cust[i].cust_name,cust[i].cust_carno,cust[i].cust_cost,0,0);
+                    print_bill(cust[i].cust_name,cust[i].cust_carno,cust[i].cust_cost,0,0,0);
                 }
 
             }
@@ -1122,6 +389,7 @@ void Car_return()
                 printf("All your work has not completed\nPlease come after %d day\n\n\n",(cust[i].cust_time - rcar_time));
             }
             tcount=1;
+            break;
         }
     }
 
@@ -1129,6 +397,9 @@ void Car_return()
     {
         printf("A car with car number %s is not with us\n\n\n",rcar_no);
     }
+
+    return 0;
+
 }
 
 void printrecphead(int flag)
@@ -1297,15 +568,503 @@ void reports()
     }
 
 }
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//------------------------------------------------------------------------------------------------------------//
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-void Job()
+int Car_services()
 {
+    int choice,i,kn=0;
+    FILE* rfile=fopen("repairlist.txt","r");
+    if(rfile==NULL)
+    {
+        printf("not abel to open file");
+        return 2;
+    }
+    char buffer[200];
+    fgets(buffer,200,rfile);
+    while(!feof(rfile))
+    {
+        struct repair *p = repser +kn;
+        sscanf(buffer,"%d %d  %d  %d  %d  %s\n",&p->repair_id,&p->repair_time,&p->repair_cost[0],&p->repair_cost[1],&p->repair_cost[2],&p->repair_name);
+        fgets(buffer,200,rfile);kn++;
+    }
+
+
+
+
+
+    FILE * custfile=fopen("customer_data.txt","r");
+    if(custfile==NULL)
+    {
+        printf("cant open file\n");
+        return (1);
+    }
+    char buff[200];
+    fgets(buff,200,custfile);
+    while(!feof(custfile))
+    {
+        struct customer *p=cust + i;
+        sscanf(buff ,"%d %d %d %d %d %d %s %s %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d\n",&p->cust_time,&p->cust_cday,&p->cust_cmonth,&p->cust_dday,&p->cust_dmonth,&p->cust_cost,&p->cust_carno,&p->cust_name,&p->cust_required[0],&p->cust_required[1],&p->cust_required[2],&p->cust_required[3],&p->cust_required[4],&p->cust_required[5],&p->cust_required[6],&p->cust_required[7],&p->cust_required[8],&p->cust_required[9],&p->cust_indcost[0],&p->cust_indcost[1],&p->cust_indcost[2],&p->cust_indcost[3],&p->cust_indcost[4],&p->cust_indcost[5],&p->cust_indcost[6],&p->cust_indcost[7],&p->cust_indcost[8],&p->cust_indcost[9]);
+        fgets(buff,200,custfile);
+        i++;
+    }
+    fclose(custfile);
+
+    printf("1) Enter 1 for car service\n2) Enter 2 for car delivery\n3) Enter 3 for reports\n");
+    scanf("%d",&choice);
+    switch(choice)
+        {
+        case 1:
+            Car_service();
+            recp++;
+            break;
+        case 2:
+            Car_return();
+            break;recp++;
+        case 3:
+            reports();
+            break;
+        }
+
+
+
+    FILE *write=fopen("customer_data.txt","w");
+    if(write==NULL)
+    {
+        printf("error occurred");
+        return (1);
+    }
+    for(i=0;i<numcust;i++)
+    {
+        if(cust[i].cust_time==1 || cust[i].cust_time==2 || cust[i].cust_time==3 || cust[i].cust_time==4)
+            fprintf(write,"%d %d %d %d %d %d %s %s %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d\n",cust[i].cust_time,cust[i].cust_cday,cust[i].cust_cmonth,cust[i].cust_dday,cust[i].cust_dmonth,cust[i].cust_cost,cust[i].cust_carno,cust[i].cust_name,cust[i].cust_required[0],cust[i].cust_required[1],cust[i].cust_required[2],cust[i].cust_required[3],cust[i].cust_required[4],cust[i].cust_required[5],cust[i].cust_required[6],cust[i].cust_required[7],cust[i].cust_required[8],cust[i].cust_required[9],cust[i].cust_indcost[0],cust[i].cust_indcost[1],cust[i].cust_indcost[2],cust[i].cust_indcost[3],cust[i].cust_indcost[4],cust[i].cust_indcost[5],cust[i].cust_indcost[6],cust[i].cust_indcost[7],cust[i].cust_indcost[8],cust[i].cust_indcost[9]);
+    }
+    fclose(write);
+
+        return (0);
+}
+
+
+struct BRV{
+    int a;
+    char car[20];
+    char com[10];
+	char t[20];
+	int c;
+};
+struct WRV{
+    int a;
+    char car[20];
+    char com[10];
+	char t[20];
+	int c;
+};
+struct Creta{
+    int a;
+    char car[20];
+    char com[10];
+	char t[20];
+	int c;
+};
+struct Venue{
+    int a;
+    char car[20];
+    char com[10];
+	char t[20];
+	int c;
+};
+struct Compass{
+    int a;
+    char car[20];
+    char com[10];
+	char t[20];
+	int c;
+};
+struct Seltos{
+    int a;
+    char car[20];
+    char com[10];
+	char t[20];
+	int c;
+};
+struct Sonet{
+    int a;
+    char car[20];
+    char com[10];
+	char t[20];
+	int c;
+};
+struct X2{
+    int a;
+    char car[20];
+    char com[10];
+	char t[20];
+	int c;
+};
+struct Boleno{
+    int a;
+    char car[20];
+    char com[10];
+	char t[20];
+	int c;
+};
+struct C220{
+    int a;
+    char car[20];
+    char com[10];
+	char t[20];
+	int c;
+};
+struct panemera{
+    int a;
+    char car[20];
+    char com[10];
+	char t[20];
+	int c;
+};
+struct A6{
+    int a;
+    char car[20];
+  	char com[10];
+	char t[20];
+	int c;
+};
+struct vento{
+    int a;
+    char car[20];
+    char com[10];
+	char t[20];
+	int c;
+};
+struct glanza{
+    int a;
+    char car[20];
+    char com[10];
+	char t[20];
+	int c;
+};
+struct continental{
+    int a;
+    char car[20];
+    char com[10];
+	char t[20];
+	int c;
+};
+struct evoque{
+    int a;
+    char car[20];
+    char com[10];
+	char t[20];
+	int c;
+};
+struct ff{
+    int a;
+    char car[20];
+    char com[10];
+	char t[20];
+	int c;
+};
+New_car(){
+  	FILE *fp;
+    char lines;
+    fp = fopen("car.txt", "w+");
+    if(fp==NULL){
+        printf("\\Error cannot open file");
+        exit(1);
+    }
+    struct BRV b;
+    strcpy(b.car,"BRV");
+    strcpy(b.com,"Honda");
+    strcpy(b.t,"SUV");
+    b.c = 1000000;
+    b.a = 1;
+    printf("%d\n", b.a);
+    printf("%s\n", b.car);
+    printf("%s\n", b.com);
+    printf("%s\n", b.t);
+    printf("%d\n", b.c);
+    printf("\n");
+
+    struct WRV w;
+    strcpy(w.car,"WRV");
+    strcpy(w.com,"Honda");
+    strcpy(w.t,"SUV");
+    w.c = 1400000;
+    w.a = 2;
+    printf("%d\n", w.a);
+    printf("%s\n", w.car);
+    printf("%s\n", w.com);
+    printf("%s\n", w.t);
+    printf("%d\n", w.c);
+    printf("\n");
+
+    struct Creta c1;
+    strcpy(c1.car,"Creta");
+    strcpy(c1.com,"Hyundai");
+    strcpy(c1.t,"SUV");
+    c1.c = 1100000;
+    c1.a = 3;
+    printf("%d\n", c1.a);
+    printf("%s\n", c1.car);
+    printf("%s\n", c1.com);
+    printf("%s\n", c1.t);
+    printf("%d\n", c1.c);
+    printf("\n");
+
+    struct Venue v;
+    strcpy(v.car,"Venue");
+    strcpy(v.com,"Hyundai");
+    strcpy(v.t,"SUV");
+    v.c = 800000;
+    v.a = 4;
+    printf("%d\n", v.a);
+    printf("%s\n", v.car);
+    printf("%s\n", v.com);
+    printf("%s\n", v.t);
+    printf("%d\n", v.c);
+    printf("\n");
+
+    struct Compass s;
+    strcpy(s.car,"Compass");
+    strcpy(s.com,"Jeep");
+    strcpy(s.t,"SUV");
+    s.c = 1700000;
+    s.a = 5;
+    printf("%d\n", s.a);
+    printf("%s\n", s.car);
+    printf("%s\n", s.com);
+    printf("%s\n", s.t);
+    printf("%d\n", s.c);
+    printf("\n");
+
+    struct Seltos o;
+    strcpy(o.car,"Seltos");
+    strcpy(o.com,"Kia");
+    strcpy(o.t,"SUV");
+    o.c = 1000000;
+    o.a = 6;
+    printf("%d\n", o.a);
+    printf("%s\n", o.car);
+    printf("%s\n", o.com);
+    printf("%s\n", o.t);
+    printf("%d\n", o.c);
+    printf("\n");
+
+    struct X2 x;
+    strcpy(x.car,"X2");
+    strcpy(x.com,"BMW");
+    strcpy(x.t,"SUV");
+    x.c = 4500000;
+    x.a = 7;
+    printf("%d\n", x.a);
+    printf("%s\n", x.car);
+    printf("%s\n", x.com);
+    printf("%s\n", x.t);
+    printf("%d\n", x.c);
+    printf("\n");
+
+    struct Boleno n;
+    strcpy(n.car,"Boleno");
+    strcpy(n.com,"Suzuki");
+    strcpy(n.t,"Hatchback");
+    n.c = 700000;
+    n.a = 8;
+    printf("%d\n", n.a);
+    printf("%s\n", n.car);
+    printf("%s\n", n.com);
+    printf("%s\n", n.t);
+    printf("%d\n", n.c);
+    printf("\n");
+
+    struct C220 me;
+    strcpy(me.car,"C220");
+    strcpy(me.com,"Mercedes");
+    strcpy(me.t,"Sedan");
+    me.c = 4500000;
+    me.a = 9;
+    printf("%d\n", me.a);
+    printf("%s\n", me.car);
+    printf("%s\n", me.com);
+    printf("%s\n", me.t);
+    printf("%d\n", me.c);
+    printf("\n");
+
+    struct panemera d;
+    strcpy(d.car,"Panemera");
+    strcpy(d.com,"Porsche");
+    strcpy(d.t,"hatchback");
+    d.c = 23000000;
+    d.a = 10;
+    printf("%d\n", d.a);
+    printf("%s\n", d.car);
+    printf("%s\n", d.com);
+    printf("%s\n", d.t);
+    printf("%d\n", d.c);
+    printf("\n");
+
+    struct A6 z1;
+    strcpy(z1.car,"A6");
+    strcpy(z1.com,"Audi");
+    strcpy(z1.t,"Sedan");
+    z1.c = 5600000;
+    z1.a = 11;
+    printf("%d\n", z1.a);
+    printf("%s\n", z1.car);
+    printf("%s\n", z1.com);
+    printf("%s\n", z1.t);
+    printf("%d\n", z1.c);
+    printf("\n");
+
+    struct vento f;
+    strcpy(f.car,"Vento");
+    strcpy(f.com,"Volkswagen");
+    strcpy(f.t,"Sedan");
+    f.c = 1500000;
+    f.a = 12;
+    printf("%d\n", f.a);
+    printf("%s\n", f.car);
+    printf("%s\n", f.com);
+    printf("%s\n", f.t);
+    printf("%d\n", f.c);
+    printf("\n");
+
+    struct glanza m;
+    strcpy(m.car,"Glanza");
+    strcpy(m.com,"Toyota");
+    strcpy(m.t,"hatchback");
+    m.c = 1100000;
+    m.a = 13;
+    printf("%d\n", m.a);
+    printf("%s\n", m.car);
+    printf("%s\n", m.com);
+    printf("%s\n", m.t);
+    printf("%d\n", m.c);
+    printf("\n");
+
+    struct continental aa;
+    strcpy(aa.car,"Continental");
+    strcpy(aa.com,"Bentley");
+    strcpy(aa.t,"Sedan");
+    aa.c = 4000000;
+    aa.a = 14;
+    printf("%d\n", aa.a);
+    printf("%s\n", aa.car);
+    printf("%s\n", aa.com);
+    printf("%s\n", aa.t);
+    printf("%d\n", aa.c);
+    printf("\n");
+
+    struct evoque q;
+    strcpy(q.car,"Evoque");
+    strcpy(q.com,"Land Rover");
+    strcpy(q.t,"SUV");
+    q.c = 5600000;
+    q.a = 15;
+    printf("%d\n", q.a);
+    printf("%s\n", q.car);
+    printf("%s\n", q.com);
+    printf("%s\n", q.t);
+    printf("%d\n", q.c);
+    printf("\n");
+
+    struct ff gg;
+    strcpy(gg.car,"FF");
+    strcpy(gg.com,"Ferrari");
+    strcpy(gg.t,"Hatchback");
+    gg.c = 25000000;
+    gg.a = 16;
+    printf("%d\n", gg.a);
+    printf("%s\n", gg.car);
+    printf("%s\n", gg.com);
+    printf("%s\n", gg.t);
+    printf("%d\n", gg.c);
+ 	printf("\n");
+
+ 	int z;
+ 	printf("Select a car number: ");
+ 	scanf("%d", &z);
+ 	switch(z){
+        case 1:
+            printf("Congratulations, You have ordered a Honda BRV");
+            break;
+        case 2:
+            printf("Congratulations, You have ordered a Honda WRV");
+            break;
+        case 3:
+            printf("Congratulations, You have ordered a Hyundai Creta");
+            break;
+        case 4:
+            printf("Congratulations, You have ordered a Hyundai Venue");
+            break;
+        case 5:
+            printf("Congratulations, You have ordered a Jeep Compass");
+            break;
+        case 6:
+            printf("Congratulations, You have ordered a Kia Seltos");
+            break;
+        case 7:
+            printf("Congratulations, You have ordered a BMW X2");
+            break;
+        case 8:
+            printf("Congratulations, You have ordered a Suzuki Boleno");
+            break;
+        case 9:
+            printf("Congratulations, You have ordered a Mercedes C220");
+            break;
+        case 10:
+            printf("Congratulations, You have ordered a Porsche Panemera");
+            break;
+        case 11:
+            printf("Congratulations, You have ordered an Audi A6");
+            break;
+        case 12:
+            printf("Congratulations, You have ordered a Volkswagen Vento");
+            break;
+        case 13:
+            printf("Congratulations, You have ordered a Toyota Glanza");
+            break;
+        case 14:
+            printf("Congratulations, You have ordered a Bentley Continental");
+            break;
+        case 15:
+            printf("Congratulations, You have ordered a Land Rover Evoque");
+            break;
+        case 16:
+            printf("Congratulations, You have ordered a Ferrari FF");
+            break;
+        default:
+            printf("Sorry, you have entered the wrong car number");
+            break;
+ 	}
+ 	return 0;
+}
+int Job()
+{
+    FILE *filePointer;
+    filePointer = fopen("w.txt", "a");
+    char dataToBeWritten[150];
+    start1:
+    printf("Enter Name:\n");
+    char name[50];
+    scanf("%s",&name);
+    char name1[50];
+    strcpy(name1,"Name: ");
+    strcat(name1,name);
+    strcat(dataToBeWritten,name1);
+    strcat(dataToBeWritten,"\n");
+    printf("Enter Phone:\n");
+    scanf("%s",&name);
+    if(strlen(name)!=10)
+    {
+        printf("Phone number should be 10 digits\n");
+        goto start1;
+    }
+    strcpy(name1,"Phone: ");
+    strcat(name1,name);
+    strcat(dataToBeWritten,name1);
     char* ar1[6]={"Mechanic","Salesman","Safety Inspector","Manager","Designer","Supervisor"};
     printf("Applying for position :\n");
+    if (filePointer == NULL)
+    {
+        printf( "w.c file failed to open." ) ;
+    }
     start:
     printf("1.%s\n",ar1[0]);
     printf("2.%s\n",ar1[1]);
@@ -1344,21 +1103,42 @@ void Job()
     bool flag=false;
     if(marks[1]>=87&&marks[2]>=8.6){
         if(op==6){
+            strcat(dataToBeWritten,"Job: Supervisor\n");
             flag=true;
         }
     }
-    if(marks[1]>=80&&marks[2]>=8.0){
+    if(marks[1]>=80&&marks[2]>=8.0&&flag==false){
         if(op==4||op==5){
+            if(op==4){
+            strcat(dataToBeWritten,"\nJob: Manager\n");}
+            if(op==5){
+            strcat(dataToBeWritten,"\nJob: Designer\n");}
             flag=true;
         }
     }
-    if(marks[1]>=70&&marks[2]>=8.0){
+    if(marks[1]>=70&&marks[2]>=8.0&&flag==false){
         if(op==3||op==1||op==5){
+            if(op==1){
+            strcat(dataToBeWritten,"\nJob: Mechanic\n");}
+            if(op==3){
+            strcat(dataToBeWritten,"\nJob: Safety Inspector\n");}
+            if(op==5){
+            strcat(dataToBeWritten,"\nJob: Designer\n");}
             flag=true;
         }
     }
-    if(marks[1]>=65&&marks[2]>=6.5){
+    if(marks[1]>=65&&marks[2]>=6.5&&flag==false){
         if(op==1||op==2||op==3||op==4||op==5){
+            if(op==1){
+            strcat(dataToBeWritten,"\nJob: Mechanic\n");}
+            if(op==2){
+            strcat(dataToBeWritten,"\nJob: Salesman\n");}
+            if(op==3){
+            strcat(dataToBeWritten,"\nJob: Safety Inspector\n");}
+            if(op==4){
+            strcat(dataToBeWritten,"\nJob: Manager\n");}
+            if(op==5){
+            strcat(dataToBeWritten,"\nJob: Designer\n");}
             flag=true;
         }
     }
@@ -1377,73 +1157,61 @@ void Job()
     else{
         if(op==6){
            if(marks[1]>=87&&marks[1]<=100&&marks[2]>=8.6){
-                printf("The salary will be Rs 90000 per month\n");
+                printf("The salary will be Rs 90000 per month");
+                strcat(dataToBeWritten,"The salary will be Rs 90000 per month");
             }
         }
         else if(op==4||op==6){
             if(marks[1]>=80&&marks[2]>=8){
-                printf("The salary will be Rs 85000 per month\n");
+                printf("The salary will be Rs 85000 per month");
+                strcat(dataToBeWritten,"The salary will be Rs 85000 per month");
             }
         }
         else if(op==1||op==3||op==5||op==4||op==6){
             if(marks[1]>=70&&marks[2]>=8){
-                printf("The salary will be Rs 50000 per month\n");
+                printf("The salary will be Rs 50000 per month");
+                strcat(dataToBeWritten,"The salary will be Rs 50000 per month");
             }
             else if(marks[1]>85&&marks[2]>=9){
-                printf("The salary will be Rs 80000 per month\n");
+                printf("The salary will be Rs 80000 per month");
+                strcat(dataToBeWritten,"The salary will be Rs 80000 per month");
             }
         }
         else if(op==2){
             if(marks[1]>=65&&marks[2]>=6.5){
-                printf("The salary will be Rs 40000 per month\n");
+                printf("The salary will be Rs 40000 per month");
+                strcat(dataToBeWritten,"The salary will be Rs 40000 per month");
             }
             else if(marks[1]>85&&marks[2]>=9){
-                printf("The salary will be Rs 60000 per month\n");
+                printf("The salary will be Rs 60000 per month");
+                strcat(dataToBeWritten,"The salary will be Rs 60000 per month");
             }
         }
     }
-}
-
-void Car_services()
-{
-    int choice;
-    printf("1) Enter 1 for car service\n2) Enter 2 for car delivery\n3) Enter 3 for reports\n");
-    scanf("%d",&choice);
-    switch(choice)
+    if (strlen (dataToBeWritten)>0)
         {
-        case 1:
-            Car_service();
-            slno++;recp++;
-            break;
-        case 2:
-            Car_return();
-            break;recp++;
-        case 3:
-            reports();
-            break;
+            fputs(dataToBeWritten, filePointer) ;
+            fputs("\n", filePointer) ;
         }
+    fclose(filePointer) ;
+    return 0;
 }
-
 int main()
 {
 
-    int choice,inf=1;
-    while(inf>0)
+    int choice;
+    printf("1) Press 1 to buy a new car\n2) Press 2 for car services \n3) Press 3 for job opportunity\n");
+    scanf("%d",&choice);
+    switch(choice)
     {
-        printf("1) Press 1 to buy a new car\n2) Press 2 for car services \n3) Press 3 for job opportunity\n");
-        scanf("%d",&choice);
-        switch(choice)
-        {
-        case 1:
-            New_car();
-            break;
-        case 2:
-            Car_services();
-            break;
-        case 3:
-            Job();
-            break;
-        }
-        printf("\n\n\n");
+    case 1:
+        New_car();
+        break;
+    case 2:
+        Car_services();
+        break;
+    case 3:
+        Job();
+        break;
     }
 }
