@@ -1,2 +1,1 @@
-car showroom
-add repairlist.txt in the desired folder 
+add repairlist.txt in the folder of code
