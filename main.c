@@ -118,6 +118,7 @@ int Car_service()
             slno++;
     }
 
+
     for(i=0;i<repno;i++)
     {
         required[i]=-1;
@@ -989,34 +990,24 @@ New_car(){
 }
 int Job()
 {
-    FILE *filePointer;
-    filePointer = fopen("w.txt", "a");
-    char dataToBeWritten[150];
+    FILE* filepointer;
+    filepointer=fopen("write.txt","a");
     start1:
-    printf("Enter Name:\n");
-    char name[50];
+    printf("Enter name\n");
+    char name[100];
     scanf("%s",&name);
-    char name1[50];
-    strcpy(name1,"Name: ");
-    strcat(name1,name);
-    strcat(dataToBeWritten,name1);
-    strcat(dataToBeWritten,"\n");
-    printf("Enter Phone:\n");
-    scanf("%s",&name);
-    if(strlen(name)!=10)
-    {
-        printf("Phone number should be 10 digits\n");
-        goto start1;
+    printf("Enter phone number\n");
+    char phone[100];
+    scanf("%s",&phone);
+    if(strlen(phone)!=10){
+    printf("Phone number should have 10 digits\n");
+    goto start1;
     }
-    strcpy(name1,"Phone: ");
-    strcat(name1,name);
-    strcat(dataToBeWritten,name1);
+    fprintf(filepointer,"Name:%s\n",name);
+    fprintf(filepointer,"Phone:%s",phone);
     char* ar1[6]={"Mechanic","Salesman","Safety Inspector","Manager","Designer","Supervisor"};
+    char dataToBeWritten[150];
     printf("Applying for position :\n");
-    if (filePointer == NULL)
-    {
-        printf( "w.c file failed to open." ) ;
-    }
     start:
     printf("1.%s\n",ar1[0]);
     printf("2.%s\n",ar1[1]);
@@ -1055,7 +1046,7 @@ int Job()
     bool flag=false;
     if(marks[1]>=87&&marks[2]>=8.6){
         if(op==6){
-            strcat(dataToBeWritten,"Job: Supervisor\n");
+            strcat(dataToBeWritten,"\nJob: Supervisor\n");
             flag=true;
         }
     }
@@ -1085,7 +1076,7 @@ int Job()
             strcat(dataToBeWritten,"\nJob: Mechanic\n");}
             if(op==2){
             strcat(dataToBeWritten,"\nJob: Salesman\n");}
-            if(op==3){
+            if(op==3){char dataToBeWritten[150];
             strcat(dataToBeWritten,"\nJob: Safety Inspector\n");}
             if(op==4){
             strcat(dataToBeWritten,"\nJob: Manager\n");}
@@ -1109,66 +1100,76 @@ int Job()
     else{
         if(op==6){
            if(marks[1]>=87&&marks[1]<=100&&marks[2]>=8.6){
-                printf("The salary will be Rs 90000 per month");
-                strcat(dataToBeWritten,"The salary will be Rs 90000 per month");
+                printf("The salary will be Rs 90000 per month\n");
+                strcat(dataToBeWritten,"Salary:90000");
             }
         }
         else if(op==4||op==6){
             if(marks[1]>=80&&marks[2]>=8){
-                printf("The salary will be Rs 85000 per month");
-                strcat(dataToBeWritten,"The salary will be Rs 85000 per month");
+                printf("The salary will be Rs 85000 per month\n");
+                strcat(dataToBeWritten,"Salary:85000");
             }
         }
         else if(op==1||op==3||op==5||op==4||op==6){
-            if(marks[1]>=70&&marks[2]>=8){
-                printf("The salary will be Rs 50000 per month");
-                strcat(dataToBeWritten,"The salary will be Rs 50000 per month");
+            if(marks[1]>=70&&marks[2]>=8.0){
+                printf("The salary will be Rs 50000 per month\n");
+                strcat(dataToBeWritten,"Salary:50000");
             }
             else if(marks[1]>85&&marks[2]>=9){
-                printf("The salary will be Rs 80000 per month");
-                strcat(dataToBeWritten,"The salary will be Rs 80000 per month");
+                printf("The salary will be Rs 80000 per month\n");
+                strcat(dataToBeWritten,"Salary:80000");
             }
         }
         else if(op==2){
             if(marks[1]>=65&&marks[2]>=6.5){
-                printf("The salary will be Rs 40000 per month");
-                strcat(dataToBeWritten,"The salary will be Rs 40000 per month");
+                printf("The salary will be Rs 40000 per month\n");
+                strcat(dataToBeWritten,"Salary:40000");
             }
             else if(marks[1]>85&&marks[2]>=9){
-                printf("The salary will be Rs 60000 per month");
-                strcat(dataToBeWritten,"The salary will be Rs 60000 per month");
+                printf("The salary will be Rs 60000 per month\n");
+                strcat(dataToBeWritten,"Salary:60000");
             }
         }
     }
     if (strlen (dataToBeWritten)>0)
         {
-            fputs(dataToBeWritten, filePointer) ;
-            fputs("\n", filePointer) ;
+            fputs(dataToBeWritten, filepointer) ;
+            fputs("\n", filepointer) ;
         }
-    fclose(filePointer) ;
+    printf("\n");
+    fclose(filepointer) ;
+    char s[100];
+    int i=0;
+    int r=1;
+    printf("Do you want to delete a record?\n");
+    int option;
+    scanf("%d",&option);
+    if(option==1){
+    FILE* file;
+    FILE* file1;
+    file=fopen("write.txt","r");
+    file1=fopen("w.txt","w");
+    printf("Enter record to be deleted\n");
+    scanf("%d",&r);
+    while(fgets(s,100,file)){
+    if(i!=r-1&&i!=r&&i!=r+1&&i!=r+2){
+            fprintf(file1,"%s",s);
+    }
+    i++;
+    }
+    printf("File has been updated");
+    fclose(file);
+    fclose(file1);
+    remove("write.txt");
+    rename("w.txt","write.txt");
+    }
     return 0;
 }
 int main()
 {
-
-    int choice;
-    printf("1) Press 1 to buy a new car\n2) Press 2 for car services \n3) Press 3 for job opportunity\n");
-    scanf("%d",&choice);
-    switch(choice)
-    {
-    case 1:
-        New_car();
-        break;
-    case 2:
-        Car_services();
-        break;
-    case 3:
-        Job();
-        break;
-    }
-}
-
-    /*strcpy((repser+0)->repair_name,"Battery replacement------------------------- ");
+    int choice,i;
+    /*
+    strcpy((repser+0)->repair_name,"Battery replacement------------------------- ");
     strcpy((repser+1)->repair_name,"Brake replacement--------------------------- ");//
     strcpy((repser+2)->repair_name,"Ignition coil and spark plug---------------- ");
     strcpy((repser+3)->repair_name,"Oil filter---------------------------------- ");//
@@ -1200,12 +1201,11 @@ int main()
     (repser+6)->repair_cost[0]=200;   (repser+6)->repair_cost[1]=0;     (repser+6)->repair_cost[2]=0;
     (repser+7)->repair_cost[0]=250;   (repser+7)->repair_cost[1]=0;     (repser+7)->repair_cost[2]=0;
     (repser+8)->repair_cost[0]=25000; (repser+8)->repair_cost[1]=19000; (repser+8)->repair_cost[2]=15000;
-    (repser+9)->repair_cost[0]=2000;  (repser+9)->repair_cost[1]=0;     (repser+9)->repair_cost[2]=0;*/
-
-    
+    (repser+9)->repair_cost[0]=2000;  (repser+9)->repair_cost[1]=0;     (repser+9)->repair_cost[2]=0;
 
 
-    /*FILE *wfile = fopen("repairlist.txt","w+");
+
+    FILE *wfile = fopen("repairlist.txt","w");
     if(wfile==NULL)
     {
         printf("not abel to open file");
@@ -1215,4 +1215,22 @@ int main()
     {
         fprintf(wfile,"%d\t%s\t%d\t%d\t%d\t%d\n",(repser+i)->repair_id,(repser+i)->repair_name,(repser+i)->repair_time,(repser+i)->repair_cost[0],(repser+i)->repair_cost[1],(repser+i)->repair_cost[2]);
     }
-    fclose(wfile);*/
+    fclose(wfile);
+
+    */
+    printf("1) Press 1 to buy a new car\n2) Press 2 for car services \n3) Press 3 for job opportunity\n");
+    scanf("%d",&choice);
+    switch(choice)
+    {
+    case 1:
+        New_car();
+        break;
+    case 2:
+        Car_services();
+        break;
+    case 3:
+        Job();
+        break;
+    }
+}
+
