@@ -1168,17 +1168,17 @@ int Job()
 int main()
 {
     int choice,i;
-    /*
-    strcpy((repser+0)->repair_name,"Battery replacement------------------------- ");
-    strcpy((repser+1)->repair_name,"Brake replacement--------------------------- ");//
-    strcpy((repser+2)->repair_name,"Ignition coil and spark plug---------------- ");
-    strcpy((repser+3)->repair_name,"Oil filter---------------------------------- ");//
-    strcpy((repser+4)->repair_name,"Wiper blade replacement--------------------- ");
-    strcpy((repser+5)->repair_name,"New tires ---------------------------------- ");//
-    strcpy((repser+6)->repair_name,"Wheel alignment----------------------------- ");//
-    strcpy((repser+7)->repair_name,"Wheel balancing----------------------------- ");//
-    strcpy((repser+8)->repair_name,"Engine lubrication system replacement------- ");
-    strcpy((repser+9)->repair_name,"Scheduled maintenance----------------------- ");
+    
+    strcpy((repser+0)->repair_name,"Battery replacement ");
+    strcpy((repser+1)->repair_name,"Brake replacement ");//
+    strcpy((repser+2)->repair_name,"Ignition coil and spark plug ");
+    strcpy((repser+3)->repair_name,"Oil filter ");//
+    strcpy((repser+4)->repair_name,"Wiper blade replacement ");
+    strcpy((repser+5)->repair_name,"New tires  ");//
+    strcpy((repser+6)->repair_name,"Wheel alignment ");//
+    strcpy((repser+7)->repair_name,"Wheel balancing ");//
+    strcpy((repser+8)->repair_name,"Engine lubrication system replacement ");
+    strcpy((repser+9)->repair_name,"Scheduled maintenance ");
 
     (repser+0)->repair_time=3;
     (repser+1)->repair_time=6;
@@ -1203,7 +1203,11 @@ int main()
     (repser+8)->repair_cost[0]=25000; (repser+8)->repair_cost[1]=19000; (repser+8)->repair_cost[2]=15000;
     (repser+9)->repair_cost[0]=2000;  (repser+9)->repair_cost[1]=0;     (repser+9)->repair_cost[2]=0;
 
-
+    for(i=0;i<10;i++)
+    {
+        (repser+i)->repair_id=i+1;
+    }
+    
 
     FILE *wfile = fopen("repairlist.txt","w");
     if(wfile==NULL)
@@ -1217,7 +1221,7 @@ int main()
     }
     fclose(wfile);
 
-    */
+
     printf("1) Press 1 to buy a new car\n2) Press 2 for car services \n3) Press 3 for job opportunity\n");
     scanf("%d",&choice);
     switch(choice)
